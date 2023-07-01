@@ -11,12 +11,12 @@
             "options": {
                 "compiler": "swc",
                 "outputPath": "build/client",
-                "index": "src/index.html",
-                "baseHref": "/",
+                "index": "src/public/index.html",
+                "baseHref": "/client/",
                 "main": "src/main.tsx",
                 "tsConfig": "tsconfig.app.json",
-                "assets": ["src/favicon.ico", "src/assets"],
-                "styles": ["src/styles.css"],
+                "assets": ["src/public/favicon.ico", "src/assets"],
+                "styles": [],
                 "scripts": [],
                 "isolatedConfig": true,
                 "webpackConfig": "webpack.config.js"
