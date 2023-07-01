@@ -4,14 +4,14 @@
     "ignorePatterns": ["!**/*"],
     "plugins": ["@nx", "prettier", "jest"],
     "rules": {
-        "jest/no-disabled-test": "warn",
+        "jest/no-disabled-tests": "warn",
         "jest/no-focused-tests": "error",
         "jest/no-identical-title": "error",
         "jest/prefer-to-have-length": "warn",
         "jest/valid-expect": "error",
         "prefer-const": "error",
         "prefer-arrow-callback": "error",
-        "prefer-spread": "error", 
+        "prefer-spread": "error",
         "prefer-destructuring": "warn",
         "prettier/prettier": "error",
         "@typescript-eslint/ban-ts-comment": "warn",
@@ -19,22 +19,22 @@
         "no-mixed-requires": "warn"
     },
     "overrides": [
-      {
-        "files": ["*.ts", "*.tsx"],
-        "extends": ["plugin:@nx/typescript"],
-        "rules": {}
-      },
-      {
-        "files": ["*.js", "*.jsx"],
-        "extends": ["plugin:@nx/javascript"],
-        "rules": {}
-      },
-      {
-        "files": ["*.spec.ts", "*.spec.tsx", "*.spec.js", "*.spec.jsx"],
-        "env": {
-          "jest": true
+        {
+            "files": ["*.ts", "*.tsx"],
+            "extends": ["plugin:@nx/typescript"],
+            "rules": {}
         },
-        "rules": {}
-      }
+        {
+            "files": ["*.js", "*.jsx"],
+            "extends": ["plugin:@nx/javascript"],
+            "rules": {}
+        },
+        {
+            "files": ["*.spec.ts", "*.spec.tsx", "*.spec.js", "*.spec.jsx"],
+            "env": {
+                "jest": true
+            },
+            "rules": {}
+        }
     ]
-  }
+}
