@@ -105,7 +105,7 @@
       "executor": "@nx/storybook:build",
       "outputs": ["{options.outputDir}"],
       "options": {
-        "outputDir": "build/storybook/client",
+        "outputDir": "dist/storybook/client",
         "configDir": "./.storybook"
       },
       "configurations": {
