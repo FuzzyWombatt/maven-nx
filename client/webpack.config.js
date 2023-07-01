@@ -14,5 +14,29 @@ module.exports = composePlugins(withNx(), withReact(), (config) => {
             publicPath: 'auto',
             scriptType: 'text/javascript',
         },
+        plugins: [
+            new ModuleFederationPlugin({
+                name: 'client',
+                filename: 'remoteEntry.js',
+                library: { type: 'var', name: 'client' },
+                exposes: {
+                    './clientApp': './src/app/App',
+                },
+                shared: {
+                    react: {
+                        import: 'react',
+                        shareKey: 'clientReact',
+                        shareScope: 'client',
+                        singleton: true,
+                    },
+                    'react-dom': {
+                        import: 'react-dom',
+                        shareKey: 'clientReact-dom',
+                        shareScope: 'client',
+                        singleton: true,
+                    },
+                },
+            }),
+        ],
     });
 });
