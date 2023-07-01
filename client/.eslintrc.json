@@ -3,6 +3,21 @@
     "root": true,
     "ignorePatterns": ["!**/*"],
     "plugins": ["@nx", "prettier", "jest"],
+    "rules": {
+        "jest/no-disabled-test": "warn",
+        "jest/no-focused-tests": "error",
+        "jest/no-identical-title": "error",
+        "jest/prefer-to-have-length": "warn",
+        "jest/valid-expect": "error",
+        "prefer-const": "error",
+        "prefer-arrow-callback": "error",
+        "prefer-spread": "error", 
+        "prefer-destructuring": "warn",
+        "prettier/prettier": "error",
+        "@typescript-eslint/ban-ts-comment": "warn",
+        "no-console": "warn",
+        "no-mixed-requires": "warn"
+    },
     "overrides": [
       {
         "files": ["*.ts", "*.tsx"],
