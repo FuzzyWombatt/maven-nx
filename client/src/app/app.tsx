@@ -2,7 +2,7 @@
 import styles from './app.module.css';
 import React from 'react'
 
-import NxWelcome from './nx-welcome';
+import NxWelcome from './components/nx-welcome';
 
 export function App() {
   return (
