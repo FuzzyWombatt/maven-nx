@@ -1,3 +1,3 @@
-import('./BootStrap')
+import('./BootStrap');
 
-export {}
+export {};
